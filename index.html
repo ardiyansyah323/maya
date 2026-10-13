@@ -15,9 +15,9 @@ body{margin:0;background:var(--bg);color:var(--ink);font:400 16px/1.6 Inter,syst
 h1,h2,h3{font-family:'Playfair Display',Georgia,serif;font-weight:900;line-height:1.08;margin:0}
 a{color:inherit}.wrap{max-width:1040px;margin:0 auto;padding:0 20px}
 nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:10;background:rgba(255,250,240,.94);backdrop-filter:blur(8px);color:var(--ink);border-bottom:1px solid #eadfcf}
-nav .wrap{display:flex;align-items:center;justify-content:space-between;height:62px;gap:12px}
+nav .wrap{display:flex;align-items:center;flex-wrap:nowrap;height:62px;gap:22px;overflow-x:auto;overflow-y:hidden;scrollbar-width:none;-webkit-overflow-scrolling:touch}nav .wrap::-webkit-scrollbar{display:none}nav .wrap>*{flex-shrink:0;white-space:nowrap}
 .logo{font:900 24px 'Playfair Display',serif;color:var(--dk)}
-.links{display:flex;gap:18px;font-size:14px;font-weight:600;overflow-x:auto}.links a{text-decoration:none;white-space:nowrap}
+.links{display:flex;gap:22px;font-size:14px;font-weight:600}.links a{text-decoration:none;white-space:nowrap}
 .btn{display:inline-block;padding:13px 24px;border-radius:999px;background:var(--yel);color:#33261b;text-decoration:none;font:700 14px Inter,sans-serif;border:0;cursor:pointer;margin:0 8px 8px 0}
 .btn.dk{background:var(--dk);color:#fff}.btn.line{background:transparent;border:2px solid currentColor;color:inherit}
 .btn:hover{transform:translateY(-2px)}
@@ -61,7 +61,7 @@ footer .logo{font-size:34px}footer p{margin:6px 0}footer a{text-decoration:none;
 <body>
 <nav><div class="wrap"><span class="logo">Kinars 90'</span>
 <div class="links"><a href="#menu">Menu</a><a href="#lokasi">Lokasi</a><a href="#fasilitas">Fasilitas</a><a href="#ulasan">Ulasan</a></div>
-<a class="btn" id="waNav" target="_blank" rel="noopener" style="margin:0;padding:10px 18px">Reservasi</a></div></nav>
+<a class="btn" id="waNav" target="_blank" rel="noopener" style="margin:0 0 0 auto;padding:10px 18px">Reservasi</a></div></nav>
 
 <section class="hero"><div class="wrap">
 <div class="eb">Kaki Karst Citatah 90 · Buka 24/7</div>
